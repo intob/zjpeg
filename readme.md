@@ -119,3 +119,10 @@ Counted apart, not as differences:
 | `src/idct.zig` | jidctint.c's islow IDCT, scalar (the tests' reference) and on vectors |
 | `src/color.zig` | fancy upsampling and YCbCr->RGB on vectors |
 | `tools/` | `check`, `bench`, `fuzz`, linked against libjpeg-turbo's TurboJPEG (`-Dturbo=PREFIX`) |
+
+## License
+
+MIT, see [LICENSE](LICENSE).
+
+The IDCT, upsampling and colour conversion follow libjpeg-turbo's (jidctint.c, jdsample.c, jdcolor.c) so as to give its exact
+output: this software is based in part on the work of the Independent JPEG Group, and on libjpeg-turbo.
